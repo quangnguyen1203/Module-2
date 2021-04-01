@@ -56,14 +56,22 @@ public class test {
 //            }
 //            System.out.println();
 //        }
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number");
-        int n = sc.nextInt();
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter a number");
+//        int n = sc.nextInt();
+//
+//        for (int i = 1; i<=n; i++){
+//            if(i%2==0){
+//                System.out.println(i);
+//            }
+//        }
+//        static int m(int x) {
+//            int b = 0;
+//            for(int a:x){
+//                b+=a;
+//            }
+//            return b;
 
-        for (int i = 1; i<=n; i++){
-            if(i%2==0){
-                System.out.println(i);
-            }
         }
     }
 }
