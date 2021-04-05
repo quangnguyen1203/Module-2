@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class AddElementInArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Nhap size: ");
+        System.out.println("Nhập size: ");
         int size = sc.nextInt();
         int[] arr = array(size);
         for (int x : arr
@@ -11,7 +11,11 @@ public class AddElementInArray {
             System.out.print(x + "  ");
         }
         System.out.println();
-        insert(12,4,arr);
+        System.out.println("Nhập giá trị: ");
+        int value = sc.nextInt();
+        System.out.println("Nhập chỉ số: ");
+        int index = sc.nextInt();
+        insert(value,index,arr);
 
     }
 
