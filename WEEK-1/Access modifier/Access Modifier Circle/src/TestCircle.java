@@ -6,7 +6,7 @@ public class TestCircle {
         System.out.println("Bán kính hình tròn là: ");
         double radius = sc.nextDouble();
         Circle circle = new Circle();
-        circle.setRadius(10);
+//        circle.setRadius(10);
         System.out.println("Diện tích của hình tròn là: " + circle.getArea(radius));
     }
 }
