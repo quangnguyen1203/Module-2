@@ -27,6 +27,6 @@ public class Cylinder extends Circle {
                 + getHeight()
                 + ", volume is:"
                 + getVolume()
-                + super.toString();
+                +"\n" + super.toString();
     }
 }
