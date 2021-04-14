@@ -1,10 +1,12 @@
+
+
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class ATM {
     private String name;
     private int accountBalance;
-//    private String[] history = new String[3];
     private ArrayList<String> history = new ArrayList<String>();
 
     public ATM(String name, int accountBalance) {
@@ -38,13 +40,13 @@ public class ATM {
         System.out.println("\t5. Nhan phim X de thoat");
         System.out.println("===========================================");
         System.out.println("Nhap lua chon cua ban: ");
-
     }
 
     public void importA(){
         System.out.println("So du tai khoan khach hang la:" + accountBalance);
-        System.out.println("Bam nut theo menu de tiep tuc giao dich");
-        System.out.println("===========================================");
+//        System.out.println("Bam nut theo menu de tiep tuc giao dich");
+//        System.out.println("===========================================");
+        continueConfirm();
     }
 
     public void importD(){
@@ -57,9 +59,10 @@ public class ATM {
         history.add("Nap tien: " + recharge);
         System.out.println("So du tai khoan khach hang la: " + total + " vnd ");
         System.out.println(" ");
-        System.out.println("Bam nut theo menu de tiep tuc giao dich");
-        System.out.println("===========================================");
-        System.out.println(" ");
+//        System.out.println("Bam nut theo menu de tiep tuc giao dich");
+//        System.out.println("===========================================");
+//        System.out.println(" ");
+        continueConfirm();
     }
 
     public void importW(){
@@ -72,15 +75,16 @@ public class ATM {
             System.out.println("So du tai khoan khach hang la: " + total + " vnd ");
             setAccountBalance(total);
             history.add("Rut tien: " + withdrawal);
-            System.out.println("Bam nut theo menu de tiep tuc giao dich");
-            System.out.println("===========================================");
+//            System.out.println("Bam nut theo menu de tiep tuc giao dich");
+//            System.out.println("===========================================");
         } else {
             System.out.println("Giao dich khong thanh cong.");
             System.out.println("So du tai khoan khach hang la: " + getAccountBalance() + " Vnd. ");
             System.out.println("Ban khong the rut so tien hon so du tai khoan");
-            System.out.println("Bam nut theo menu de tiep tuc giao dich");
-            System.out.println("===========================================");
+//            System.out.println("Bam nut theo menu de tiep tuc giao dich");
+//            System.out.println("===========================================");
         }
+        continueConfirm();
     }
 
     public void importH(){
@@ -88,22 +92,53 @@ public class ATM {
         if(history.size() == 0){
             System.out.println("Hien tai chua co giao dich");
         }
-        if(history.size()>3){
-            for (int i = 0; i < history.size()-1; i++) {
-                System.out.println("\t" + (i+1) + ". " + history.get(i));
+        if (history.size()>3) {
+            ArrayList<String> tempHistory = new ArrayList<String>();
+            for (int i = history.size()-1; i > 0 ; i--) {
+                tempHistory.add(history.get(i));
+                if(tempHistory.size() ==3){
+                    break;
+                }
             }
-        }else {
-            for (int i = history.size()-1 ; i>=0 ; i--) {
-                System.out.println(i+1 + ". " + history.get(i));
+            Collections.reverse(tempHistory);
+            for (int i = 0; i < 3; i++) {
+                System.out.println("\t" + (i + 1) + ". " + tempHistory.get(i));
+            }
+        } else {
+            for (int i = 0; i < history.size(); i++) {
+                System.out.println("\t" + (i + 1) + ". " + history.get(i));
             }
         }
+        continueConfirm();
+    }
 
+    public void continueConfirm() {
+//        System.out.println("--------------------------");
+        System.out.println("Ban co muon tiep tuc thuc hien giao dich khong?");
+        System.out.println("Vui long nhap Y, N");
+        while (true) {
+            String choice = sc.next();
+            switch (choice) {
+                case "Y": {
+                    login();
+                    break;
+                }
+                case "N": {
+                    System.out.println("Cam on ban da su dung ATM");
+                    System.exit(0);
+                }
+                default:
+                    System.out.println("Ban nhap sai ");
+                    System.out.println("Vui long chon Y hoac N");
+                    System.out.println("===========================================");
+            }
+        }
     }
 
     public void login(){
+        System.out.println("Ngan hang ABC kinh chao quy khach " + name);
+        Menu();
         while (true) {
-            System.out.println("Ngan hang ABC kinh chao quy khach " + name);
-            Menu();
             String choice = sc.next();
             switch (choice) {
                 case "A": {
