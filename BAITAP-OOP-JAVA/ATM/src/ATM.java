@@ -44,8 +44,6 @@ public class ATM {
 
     public void importA(){
         System.out.println("So du tai khoan khach hang la:" + accountBalance);
-//        System.out.println("Bam nut theo menu de tiep tuc giao dich");
-//        System.out.println("===========================================");
         continueConfirm();
     }
 
@@ -59,9 +57,6 @@ public class ATM {
         history.add("Nap tien: " + recharge);
         System.out.println("So du tai khoan khach hang la: " + total + " vnd ");
         System.out.println(" ");
-//        System.out.println("Bam nut theo menu de tiep tuc giao dich");
-//        System.out.println("===========================================");
-//        System.out.println(" ");
         continueConfirm();
     }
 
@@ -75,14 +70,10 @@ public class ATM {
             System.out.println("So du tai khoan khach hang la: " + total + " vnd ");
             setAccountBalance(total);
             history.add("Rut tien: " + withdrawal);
-//            System.out.println("Bam nut theo menu de tiep tuc giao dich");
-//            System.out.println("===========================================");
         } else {
             System.out.println("Giao dich khong thanh cong.");
             System.out.println("So du tai khoan khach hang la: " + getAccountBalance() + " Vnd. ");
             System.out.println("Ban khong the rut so tien hon so du tai khoan");
-//            System.out.println("Bam nut theo menu de tiep tuc giao dich");
-//            System.out.println("===========================================");
         }
         continueConfirm();
     }
@@ -113,7 +104,6 @@ public class ATM {
     }
 
     public void continueConfirm() {
-//        System.out.println("--------------------------");
         System.out.println("Ban co muon tiep tuc thuc hien giao dich khong?");
         System.out.println("Vui long nhap Y, N");
         while (true) {
