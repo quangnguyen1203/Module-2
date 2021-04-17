@@ -1,14 +1,15 @@
-public class MyLinkedListQueue {
-    public Node head;
-    public Node tail;
+
+public class MyLinkedListQueue<E> {
+    public Node<E> head;
+    public Node<E> tail;
 
     public MyLinkedListQueue() {
         this.head = null;
         this.tail = null;
     }
 
-    public void enqueue(int key){
-        Node temp = new Node(key);
+    public void enqueue(E key){
+        Node<E> temp = new Node<E>(key);
         if(this.head == null){
             this.head = this.tail = temp;
             return;
@@ -17,28 +18,30 @@ public class MyLinkedListQueue {
         this.tail = temp;
     }
 
-    public Node dequeue(){
-        if(this.head == null){
-            return null;
-        }
+    public E dequeue(){
+        if (head == null) return null;
+        Node holder;
         Node temp = this.head;
-        this.head = this.head.next;
-        if(this.head == null){
-            this.tail = null;
-            return null;
-        }
-        return temp;
+        this.head = temp.next;
+        holder = temp;
+        temp = null;
+        return (E) holder.key;
     }
 
-    public static void main(String[] args) {
-        MyLinkedListQueue q = new MyLinkedListQueue();
-        q.enqueue(1);
-        q.enqueue(5);
-        System.out.println("Head: " + q.head.key);
-        System.out.println("Tail: " + q.tail.key);
-        q.dequeue();
-        System.out.println("Head: " + q.head.key);
-        System.out.println("Tail: " + q.tail.key);
+    public E peek(){
+        if(this.head == null){
 
+            return (E)"Queue is empty";
+        }
+        return (E)this.head.key;
+    }
+
+
+    public void display(){
+        Node temp = head;
+        while(temp!=null){
+            System.out.println((E) temp.key);
+            temp = temp.next;
+        }
     }
 }

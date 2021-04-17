@@ -1,8 +1,8 @@
-public class Node {
-    public int key;
+public class Node<E> {
+    public E key;
     public Node next;
 
-    public Node(int key) {
+    public Node(E key) {
         this.key = key;
         this.next = null;
     }

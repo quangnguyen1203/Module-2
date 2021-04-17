@@ -9,10 +9,7 @@ public class MyGenericStack<T> {
     }
 
     public boolean isEmpty(){
-        if(stack.size() == 0){
-            return true;
-        }
-        return false;
+        return this.size() == 0 ? true : false;
     }
 
     public void push(T element){
@@ -25,7 +22,8 @@ public class MyGenericStack<T> {
 
     public T pop() {
         if (isEmpty()) {
-            throw new EmptyStackException();
+            System.out.println("Stack is empty");
+            return null;
         }
         return stack.removeFirst();
     }
