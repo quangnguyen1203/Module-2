@@ -1,3 +1,5 @@
+package stack.StackArrays.src;
+
 import java.util.Arrays;
 
 public class MyStack<E> {
