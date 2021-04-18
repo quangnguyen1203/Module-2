@@ -1,24 +1,27 @@
+import java.util.Arrays;
+
 public class MyQueue<E> {
     public int front = 0;
     public int rear = 0;
-    public int capacity;
+    public int size;
     public E[] queueArr;
 
-    public MyQueue(int capacity) {
+    public MyQueue() {
         this.front = 0;
         this.rear = 0;
-        this.capacity = capacity;
-        this.queueArr = (E[]) new Object[capacity];
+        this.queueArr = (E[]) new Object[5];
+    }
+
+    public void ensureCapa(){
+        int newSize = queueArr.length*2;
+        queueArr = Arrays.copyOf(queueArr,newSize);
     }
 
     public void enqueue(E data){
-        if (this.rear == capacity){
-            System.out.println("Queue is full");
-
-        } else {
             queueArr[rear] = data;
+            ensureCapa();
             rear++;
-        }
+            size++;
     }
 
     public E dequeue(){
@@ -30,11 +33,16 @@ public class MyQueue<E> {
         for (int i = 0; i < this.rear - 1 ; i++) {
             queueArr[i] = queueArr[i+1];
         }
-        if (rear < capacity) {
+        if (rear < size) {
             queueArr[rear] = null;
         }
         rear--;
+        size--;
         return temp;
+    }
+
+    public int getSize(){
+        return this.size;
     }
 
     public void display(){

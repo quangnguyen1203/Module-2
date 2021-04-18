@@ -1,17 +1,21 @@
+import java.util.Arrays;
+
 public class MyStack<E> {
-    public static final int DEFAULT_CAPACITY = 10;
-    private int size = 0;
+    private int size ;
     private E[] elements;
 
+    public void ensureCapa(){
+        int newSize = elements.length*2;
+        elements = Arrays.copyOf(elements,newSize);
+    }
+
     public MyStack(){
-        this.elements = (E[]) new Object[DEFAULT_CAPACITY];
+        elements = (E[]) new Object[6];
     }
 
     public void push( E e){
-        if(size >= DEFAULT_CAPACITY){
-            System.out.println("Stack is full");
-        }
         elements[size] = e;
+        ensureCapa();
         size++;
     }
 
@@ -19,9 +23,9 @@ public class MyStack<E> {
         if(size <= 0){
             System.out.println("Stack is empty");
         }
-        E temp = elements[size - 1];
-        elements[size - 1] = null;
-        --size;
+        E temp = elements[size-1];
+        elements[size-1] = null;
+        size--;
         return temp;
     }
 

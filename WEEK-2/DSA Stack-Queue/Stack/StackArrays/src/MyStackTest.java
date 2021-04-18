@@ -6,12 +6,12 @@ public class MyStackTest {
         myStack.push(5);
         myStack.push(124);
         myStack.push(21);
-        myStack.push(4);
-        myStack.push(43);
-        myStack.push(65);
-
         myStack.display();
-        System.out.println(myStack.peek());
+        System.out.println();
+        System.out.println(myStack.pop());
+        System.out.println(myStack.pop());
+        System.out.println(myStack.pop());
+        myStack.display();
     }
 
 }
