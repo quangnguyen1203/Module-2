@@ -17,7 +17,9 @@ public class MyStack<E> {
 
     public void push( E e){
         elements[size] = e;
-        ensureCapa();
+        if(size == elements.length){
+            ensureCapa();
+        }
         size++;
     }
 

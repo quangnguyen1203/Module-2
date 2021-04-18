@@ -10,13 +10,10 @@ public class MyQueueTest {
         myQueue.enqueue(4);
         myQueue.enqueue(5);
         myQueue.display();
-        myQueue.enqueue(6);
+        System.out.println("**********************");
         myQueue.dequeue();
         myQueue.dequeue();
-        myQueue.display();
-        System.out.println(myQueue.getSize());
-//        myQueue.diplayFront();
-//        myQueue.diplayRear();
+        myQueue.dequeue();
 
     }
 }

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e73d783a-0e67-4873-8130-3d23611312c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../Code DSA/MyLinkedList/src/MyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Code DSA/MyLinkedList/src/MyLinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Code DSA/MyLinkedList/src/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QueueLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QueueLinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DSA Danh sach/LinkedList/out/production/LinkedList/MyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DSA Danh sach/LinkedList/out/production/LinkedList/MyLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DSA Danh sach/LinkedList/out/production/LinkedList/MyLinkedListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DSA Danh sach/LinkedList/out/production/LinkedList/MyLinkedListTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DSA Danh sach/LinkedList/src/MyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DSA Danh sach/LinkedList/src/MyLinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QueueArrays/out/production/QueueArrays/MyQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/../QueueArrays/out/production/QueueArrays/MyQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QueueArrays/out/production/QueueArrays/MyQueueTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../QueueArrays/out/production/QueueArrays/MyQueueTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QueueArrays/src/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../QueueArrays/src/MyQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../QueueArrays/src/MyQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../QueueArrays/src/MyQueueTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QueueLinkedList/MyLinkedListQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QueueLinkedList/MyLinkedListQueueTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QueueLinkedList/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyLinkedListQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyLinkedListQueueTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Stack/StackArrays/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../../Stack/StackArrays/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Stack/StackArrays/out/production/DEMO/MyStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Stack/StackArrays/out/production/DEMO/MyStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Stack/StackArrays/out/production/DEMO/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Stack/StackArrays/src/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Stack/StackArrays/src/MyStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Stack/StackArrays/src/MyStackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Stack/StackArrays/src/MyStackTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Stack/StackLinkedList/src/MyGenericStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Stack/StackLinkedList/src/MyGenericStack.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1rISjM68sTdlAlzT5ptao9od0ET" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Stack/StackLinkedList" />
+  </component>
+  <component name="RunManager">
+    <configuration name="QueueLinkedListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="QueueLinkedListTest" />
+      <module name="QueueLinkedList" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.QueueLinkedListTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e73d783a-0e67-4873-8130-3d23611312c5" name="Default Changelist" comment="" />
+      <created>1618662245354</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618662245354</updated>
+      <workItem from="1618662246801" duration="677000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
