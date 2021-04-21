@@ -1,12 +1,11 @@
-import java.util.Arrays;
 
 public class BubbleSort {
     public void bubbleSort(int[] arr){
         boolean swapped = false;
-
-        for (int i = 0; i < arr.length - 1; i++) {
+        int length = arr.length;
+        for (int i = 0; i < length - 1; i++) {
             swapped = false;
-            for ( int j = 0; j < arr.length - 1 - i; j++) {
+            for (int j = 0; j < length - 1 - i; j++) {
                 System.out.print("So sanh cac phan tu: [" + arr[j] + ", " + arr[j + 1] + "]");
 
                 if (arr[j] > arr[j + 1]) {
@@ -20,11 +19,13 @@ public class BubbleSort {
                     System.out.println(" => khong can trao doi.");
                 }
             }
+            System.out.println("Vong lap thu " + (i + 1));
+            display(arr);
             if (!swapped) {
                 break;
             }
-            System.out.println("Vong lap thu " + (i + 1));
-            display(arr);
+
+
         }
     }
 

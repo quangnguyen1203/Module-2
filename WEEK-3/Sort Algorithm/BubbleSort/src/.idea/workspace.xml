@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="be90a8ec-91d0-435b-aa15-b215a028f1c7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../DemoBubbleSort/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Search Algorithm/src/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm Sort/BubbleSort/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm Sort/BubbleSort/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm Sort/BubbleSort/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm Sort/BubbleSort/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm Sort/BubbleSort/BubbleSort.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm Sort/BubbleSort/out/production/BubbleSort/BubbleSortByStep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm Sort/BubbleSort/src/BubbleSortByStep.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm Sort/InserttionSort/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm Sort/InserttionSort/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm Sort/InserttionSort/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm Sort/InserttionSort/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm Sort/InserttionSort/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm Sort/InserttionSort/InserttionSort.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm Sort/InserttionSort/out/production/InserttionSort/InsertionSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm Sort/InserttionSort/src/InsertionSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm Sort/SelectionSort/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm Sort/SelectionSort/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm Sort/SelectionSort/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm Sort/SelectionSort/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm Sort/SelectionSort/SelectionSort.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm Sort/SelectionSort/out/production/SelectionSort/SelectionSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm Sort/SelectionSort/src/SelectionSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DemoBubbleSort/BubbleSort/out/production/BubbleSort/BubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DemoBubbleSort/BubbleSort/out/production/BubbleSort/BubbleSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DemoBubbleSort/BubbleSort/out/production/BubbleSort/BubbleSortTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DemoBubbleSort/BubbleSort/out/production/BubbleSort/BubbleSortTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DemoBubbleSort/BubbleSort/src/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DemoBubbleSort/BubbleSort/src/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DemoBubbleSort/BubbleSort/src/BubbleSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DemoBubbleSort/BubbleSort/src/BubbleSortTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1rPwpD8q3avg3r0HzmVxdqd5mJ7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="be90a8ec-91d0-435b-aa15-b215a028f1c7" name="Default Changelist" comment="" />
+      <created>1618891213987</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618891213987</updated>
+      <workItem from="1618891215215" duration="14000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
