@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6614238-8fa0-4218-b4a4-84768f54d6e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Exception&amp;&amp;Debug/ArrayIndexOutOfBoundsException/src/CreateRandom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Exception&amp;&amp;Debug/NumberFormatException/src/CalculationExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Search Algorithm/LinearSearch/out/production/LinearSearch/LinearSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Search Algorithm/LinearSearch/out/production/LinearSearch/LinearSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Search Algorithm/LinearSearch/src/LinearSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Search Algorithm/LinearSearch/src/LinearSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sort Algorithm/InserttionSort/out/production/InserttionSort/InsertionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sort Algorithm/InserttionSort/out/production/InserttionSort/InsertionSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sort Algorithm/InserttionSort/src/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sort Algorithm/InserttionSort/src/InsertionSort.java" afterDir="false" />
-    </list>
+    <list default="true" id="c6614238-8fa0-4218-b4a4-84768f54d6e9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,6 +53,7 @@
       <workItem from="1618890441875" duration="7000" />
       <workItem from="1618908043810" duration="2096000" />
       <workItem from="1619168905152" duration="1953000" />
+      <workItem from="1619251964789" duration="56000" />
     </task>
     <servers />
   </component>
