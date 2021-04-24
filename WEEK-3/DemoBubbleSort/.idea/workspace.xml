@@ -2,36 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6614238-8fa0-4218-b4a4-84768f54d6e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BubbleSort/src/BubbleSortRecursive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BubbleSort/src/InsertionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Search Algorithm/src/BinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm Sort/BubbleSort/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm Sort/BubbleSort/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm Sort/BubbleSort/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm Sort/BubbleSort/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm Sort/BubbleSort/BubbleSort.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm Sort/BubbleSort/out/production/BubbleSort/BubbleSortByStep.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm Sort/BubbleSort/src/BubbleSortByStep.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm Sort/InserttionSort/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm Sort/InserttionSort/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm Sort/InserttionSort/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm Sort/InserttionSort/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm Sort/InserttionSort/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm Sort/InserttionSort/InserttionSort.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm Sort/InserttionSort/out/production/InserttionSort/InsertionSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm Sort/InserttionSort/src/InsertionSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm Sort/SelectionSort/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm Sort/SelectionSort/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm Sort/SelectionSort/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm Sort/SelectionSort/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm Sort/SelectionSort/SelectionSort.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm Sort/SelectionSort/out/production/SelectionSort/SelectionSort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm Sort/SelectionSort/src/SelectionSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BubbleSort/out/production/BubbleSort/BubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/BubbleSort/out/production/BubbleSort/BubbleSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BubbleSort/out/production/BubbleSort/BubbleSortTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/BubbleSort/out/production/BubbleSort/BubbleSortTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BubbleSort/src/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/BubbleSort/src/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BubbleSort/src/BubbleSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BubbleSort/src/BubbleSortTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exception&amp;&amp;Debug/ArrayIndexOutOfBoundsException/src/CreateRandom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exception&amp;&amp;Debug/NumberFormatException/src/CalculationExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Search Algorithm/LinearSearch/out/production/LinearSearch/LinearSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Search Algorithm/LinearSearch/out/production/LinearSearch/LinearSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Search Algorithm/LinearSearch/src/LinearSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Search Algorithm/LinearSearch/src/LinearSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sort Algorithm/InserttionSort/out/production/InserttionSort/InsertionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sort Algorithm/InserttionSort/out/production/InserttionSort/InsertionSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sort Algorithm/InserttionSort/src/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sort Algorithm/InserttionSort/src/InsertionSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,23 +33,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../BAITAP-OOP-JAVA/ATM" />
   </component>
   <component name="RunManager">
     <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="InsertionSort" />
       <module name="DemoBubbleSort" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -94,6 +60,7 @@
       <workItem from="1618890106578" duration="319000" />
       <workItem from="1618890441875" duration="7000" />
       <workItem from="1618908043810" duration="2096000" />
+      <workItem from="1619168905152" duration="1953000" />
     </task>
     <servers />
   </component>
