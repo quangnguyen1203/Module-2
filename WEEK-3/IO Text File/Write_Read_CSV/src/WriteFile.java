@@ -13,30 +13,35 @@ public class WriteFile {
         Country country7 = new Country("1.0.64.0","1.0.127.255","16793600","16809983","JP","Japan");
         Country country8 = new Country("1.0.128.0","1.0.255.255","16809984","16842751","TH","Thailand");
 
-//        List<Country> list = new ArrayList<Country>();
-//        list.add(country1);
-//        list.add(country2);
-//        list.add(country3);
-//        list.add(country4);
-//        list.add(country5);
-//        list.add(country6);
-//        list.add(country7);
-//        list.add(country8);
+        List<Country> list = new ArrayList<Country>();
+        list.add(country1);
+        list.add(country2);
+        list.add(country3);
+        list.add(country4);
+        list.add(country5);
+        list.add(country6);
+        list.add(country7);
+        list.add(country8);
 
         try {
             FileOutputStream fos = new FileOutputStream("country.csv");
-            ObjectOutputStream oos = new ObjectOutputStream(fos);
-
+//            ObjectOutputStream oos = new ObjectOutputStream(fos);
+//
 //            oos.writeObject(list);
-            oos.writeObject(country1);
-            oos.writeObject(country2);
-            oos.writeObject(country3);
-            oos.writeObject(country4);
-            oos.writeObject(country5);
-            oos.writeObject(country6);
-            oos.writeObject(country7);
-            oos.writeObject(country8);
-            oos.close();
+            byte[] b;
+            for(int i=0;i<list.size();i++){
+                b = list.get(i).toString().getBytes();
+                fos.write(b);
+            }
+//            oos.writeObject(country1);
+//            oos.writeObject(country2);
+//            oos.writeObject(country3);
+//            oos.writeObject(country4);
+//            oos.writeObject(country5);
+//            oos.writeObject(country6);
+//            oos.writeObject(country7);
+//            oos.writeObject(country8);
+//            oos.close();
             fos.close();
 
         } catch (FileNotFoundException e) {

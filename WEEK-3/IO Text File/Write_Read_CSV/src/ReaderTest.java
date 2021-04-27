@@ -9,20 +9,21 @@ import java.util.List;
 public class ReaderTest {
     public static void main(String[] args) {
 
+
         try {
             FileInputStream fis = new FileInputStream("country.csv");
             ObjectInputStream ois = new ObjectInputStream(fis);
 
-//            List<Country> result =(ArrayList) ois.readObject();
-//
-//            for (Country obj: result
-//                 ) {
-//                System.out.println(obj);
-//            }
-            while (fis.available()> 0){
-               Country obj =(Country) ois.readObject();
+            List<Country> result =(ArrayList) ois.readObject();
+
+            for (Country obj: result
+                 ) {
                 System.out.println(obj);
             }
+//            while (fis.available()> 0){
+//               Country obj =(Country) ois.readObject();
+//                System.out.println(obj);
+//            }
 
             ois.close();
             fis.close();
@@ -33,7 +34,5 @@ public class ReaderTest {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-
-
     }
 }

@@ -1,0 +1,5 @@
+ip5 iphone 5 china 2000000
+ip6 iphone6 china 3000000
+ip7 iphone7 america 4000000
+ip8 iphone8 america 6000000
+

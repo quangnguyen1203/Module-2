@@ -69,13 +69,6 @@ public class Country implements Serializable {
     }
 
     public String toString(){
-        return "Country{" +
-                "startIp='" + startIp + '\'' +
-                ", endIp='" + endIp + '\'' +
-                ", startByte'" + startByte + '\'' +
-                ", endByte'" + endByte + '\'' +
-                ", countryCode='" + countryCode + '\'' +
-                ", country='" + country + '\'' +
-                '}';
+        return startIp + "," + endIp + "," + startByte + "," + endByte + "," + countryCode + "," + country + "\n";
     }
 }
