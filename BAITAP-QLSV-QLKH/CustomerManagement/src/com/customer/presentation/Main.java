@@ -16,22 +16,6 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        int choose;
-        while (true){
-            menuService.showMenu();
-            choose = sc.nextInt();
-            switch (choose){
-                case 1:
-                    try {
-                        menuService.addCustomer();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                    break;
-                case 4:
-                    menuService.printCustomer();
-                    break;
-            }
-        }
+        menuService.performCustomer();
     }
 }

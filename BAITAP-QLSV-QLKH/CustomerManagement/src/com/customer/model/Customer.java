@@ -72,15 +72,15 @@ public class Customer {
 
     @Override
     public String toString() {
-        return  "Khach hang " + name +
-                ", Dia chi: " + address +
-                ", Sdt: " + phoneNumber +
+        return  "Khách hàng: " + name +
+                ", Địa chỉ: " + address +
+                ", Số điện thoại: " + phoneNumber +
                 ", Email: " + email +
-                ", Gioi tinh: " + gender +
-                ", So don hang da mua: " + oderNumber;
+                ", Giới tinh: " + gender +
+                ", Số đơn hàng đã mua: " + oderNumber;
     }
 
     public String toStringCSV(){
-        return name + "," + address + "," + phoneNumber + "," + email + "," + gender + "," + oderNumber +"\n";
+        return name+","+address+","+phoneNumber+","+ email+","+gender+","+oderNumber +"\n";
     }
 }

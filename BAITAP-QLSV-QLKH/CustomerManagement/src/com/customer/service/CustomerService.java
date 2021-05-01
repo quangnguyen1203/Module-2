@@ -17,20 +17,4 @@ public class CustomerService {
     public void loadData() throws IOException {
         customerDB.readFile();
     }
-
-    public void updateFile(){
-        try {
-            customerDB.saveFile();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void print(){
-        for (Map.Entry<String, Customer> entry: CustomerDB.customerMap.entrySet()
-             ) {
-            System.out.println(entry.getValue().toString());
-        }
-    }
-
 }
