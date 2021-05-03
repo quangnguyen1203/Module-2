@@ -110,16 +110,15 @@ public class StudentDB {
 
     public void edit(int id) throws IOException {
         for (int i = 0; i < studentList.size(); i++) {
-            if(studentList.get(i).getId() == id){
+            if (studentList.get(i).getId() == id) {
                 studentList.get(i).setName(inputName());
                 studentList.get(i).setAge(inputAge());
                 studentList.get(i).setAddress(inputAddress());
                 saveFile();
-            } else {
-                System.out.println("Không tìm thấy id.");
+                break;
             }
-
         }
+        System.out.println("Không tìm thấy id.");
     }
 
     public void print(){
@@ -175,50 +174,13 @@ public class StudentDB {
                 studentList.get(i).setScore4(score4);
                 float GPA = (score1 + score2 + (score3 * 2) + (score4 * 3)) / 7;
                 studentList.get(i).setGPA(GPA);
-                System.out.println(studentList.get(i).toStringCSV());
-                saveFile();
+                System.out.println(studentList.get(i).toStringGPA());
                 return;
             }
         }
-        System.out.println("Không tìm thấy");
+        System.out.println("Không tìm thấy.");
     }
 
-//    public void saveFileData() throws IOException {
-//        File file = new File("studentData.csv");
-//        if(!file.exists()){
-//            file.createNewFile();
-//        }
-//
-//        FileOutputStream fos = new FileOutputStream("studentData.csv");
-//        BufferedOutputStream bos = new BufferedOutputStream(fos);
-//        for (int i = 0; i <studentList.size() ; i++) {
-//            bos.write(studentList.get(i).toStringPointCSV().getBytes());
-//        }
-//        bos.flush();
-//        bos.close();
-//        fos.close();
-//    }
-//
-//    public void readData() throws IOException {
-//        File file = new File("studentData.csv");
-//        if(!file.exists()){
-//            file.createNewFile();
-//        }
-//        BufferedReader br = null;
-//        try {
-//            br = new BufferedReader(new FileReader("studentData.csv"));
-//            String line;
-//            while ((line=br.readLine())!= null){
-//                String[] str = line.split(",");
-//                Student student = new Student(str[0],Float.parseFloat(str[1]),Float.parseFloat(str[2]),Float.parseFloat(str[3]),Float.parseFloat(str[4]),Float.parseFloat(str[5]));
-//                studentList.add(student);
-//            }
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        } finally {
-//            br.close();
-//        }
-//    }
 
 }
 

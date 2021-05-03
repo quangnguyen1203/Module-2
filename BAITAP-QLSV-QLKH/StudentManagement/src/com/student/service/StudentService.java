@@ -19,6 +19,7 @@ public class StudentService {
         Student student = new Student(id, name, age, address);
         studentDB.add(student);
         studentDB.saveFile();
+        System.out.println("Thêm học sinh " + name + " thành công");
     }
 
     public void deleteStudent() throws IOException {
@@ -27,10 +28,6 @@ public class StudentService {
         sc.nextLine();
         studentDB.delete(id);
     }
-
-//    public void loadData() throws IOException {
-//        studentDB.readData();
-//    }
 
     public void loadFile() throws IOException {
         studentDB.read();
@@ -44,6 +41,7 @@ public class StudentService {
         System.out.println("5. Nhập điểm học viên");
         System.out.println("6. Sửa điểm học viên");
         System.out.println("7. Xếp loại học viên");
+        System.out.println("0. Kết thúc.");
     }
 
     public void editStudent(int id) throws IOException {
@@ -58,7 +56,7 @@ public class StudentService {
         studentDB.printScore();
     }
 
-    public void editScore(String name) throws IOException {
+    public void editScoreStudent(String name) throws IOException {
         studentDB.inputScore(name);
         studentDB.saveFile();
     }

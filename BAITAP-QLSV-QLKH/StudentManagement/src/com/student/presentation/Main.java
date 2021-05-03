@@ -16,6 +16,7 @@ public class Main {
         }
 
         int choose;
+        System.out.println("***********Menu***********");
         while (true){
             studentService.showMenu();
             choose = sc.nextInt();
@@ -48,10 +49,19 @@ public class Main {
                     }
                     break;
                 case 5:
-                    System.out.println("Nhập tên: ");
+                    System.out.println("Nhập tên học sinh cần nhập điểm: ");
+                    String nameStudent = sc.nextLine();;
+                    try {
+                        studentService.editScoreStudent(nameStudent);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    break;
+                case 6:
+                    System.out.println("Nhập tên học sinh cần sửa điểm: ");
                     String name = sc.nextLine();
                     try {
-                        studentService.editScore(name);
+                        studentService.editScoreStudent(name);
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -63,11 +73,13 @@ public class Main {
                         e.printStackTrace();
                     }
                     break;
+                case 0:
+                    System.out.println("Thoát.");
+                    System.exit(0);
+                default:
+                    System.out.println("Yêu cầu nhập lại: ");
+                    break;
             }
-
         }
-
-
-
     }
 }

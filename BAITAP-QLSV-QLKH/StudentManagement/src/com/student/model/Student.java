@@ -1,7 +1,5 @@
 package com.student.model;
 
-import javax.print.DocFlavor;
-
 public class Student {
     private int id;
     private String name;
@@ -14,15 +12,6 @@ public class Student {
     private float GPA;
 
     public Student() {
-    }
-
-    public Student(String name, float score1, float score2, float score3, float score4,float GPA) {
-        this.name = name;
-        this.score1 = score1;
-        this.score2 = score2;
-        this.score3 = score3;
-        this.score4 = score4;
-        this.GPA = GPA;
     }
 
     public Student(int id, String name, int age, String address) {
@@ -107,10 +96,6 @@ public class Student {
         this.score4 = score4;
     }
 
-//    public float GPA(float score1,float score2,float score3,float score4){
-//        return (score1 + score2 + (score3 * 2) + (score4 * 3)) / 7;
-//    }
-
 
     public float getGPA() {
         return GPA;
@@ -134,11 +119,7 @@ public class Student {
         return id + "," + name + "," + age  + "," + address + "," + score1 + "," + score2 + "," + score3 + "," + score4 + "," + GPA + "\n";
     }
 
-//    public String toStringPointCSV() {
-//        return name + "," + score1 + "," + score2 + "," + score3 + "," + score4 + "," + GPA + "\n";
-//    }
-
     public String toStringGPA(){
-        return name + ":" + " Điểm hệ số 1: " + score1 + "Điểm hệ số 2: " + score2 + "Điểm hệ số 3: " + score3 + "Điểm hệ số 4: " + score4 + "Điểm trung bình: " + GPA + "\n";
+        return name + ":" + " Điểm hệ số 1: " + score1 + "," +  " Điểm hệ số 1: " + score2 + "," + " Điểm hệ số 2: " + score3 + "," +  " Điểm hệ số 3: " + score4 + "," +  " Điểm trung bình: " + GPA + "\n";
     }
 }
