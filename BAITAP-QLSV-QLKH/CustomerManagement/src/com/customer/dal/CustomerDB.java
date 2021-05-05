@@ -33,7 +33,6 @@ public class CustomerDB {
              ) {
             bos.write(entry.getValue().toStringCSV().getBytes());
         }
-
         bos.flush();
         bos.close();
         fos.close();

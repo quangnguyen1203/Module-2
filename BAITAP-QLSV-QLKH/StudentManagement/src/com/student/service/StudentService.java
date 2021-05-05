@@ -13,6 +13,10 @@ public class StudentService {
 
     public void addStudent() throws IOException {
         int id = studentDB.inputId();
+        if(id==-1){
+            System.out.println("Id đã tồn tại.");
+            return;
+        }
         String name = studentDB.inputName();
         int age = studentDB.inputAge();
         String address = studentDB.inputAddress();
@@ -42,10 +46,13 @@ public class StudentService {
         System.out.println("6. Sửa điểm học viên");
         System.out.println("7. Xếp loại học viên");
         System.out.println("0. Kết thúc.");
+        System.out.println("*************************");
+        System.out.println("Nhập để chọn: ");
     }
 
     public void editStudent(int id) throws IOException {
         studentDB.edit(id);
+        studentDB.saveFile();
     }
 
     public void printStudent(){
@@ -56,8 +63,114 @@ public class StudentService {
         studentDB.printScore();
     }
 
-    public void editScoreStudent(String name) throws IOException {
-        studentDB.inputScore(name);
+    public void inputScoreStudent(int id) throws IOException {
+        studentDB.inputScore(id);
         studentDB.saveFile();
     }
+
+    public void editScoreStudent(int id) throws IOException {
+        studentDB.editScore(id);
+        studentDB.saveFile();
+    }
+
+    public void continueConfirm() {
+//        System.out.println("Bạn có muốn tiếp tục thực hiện không ?");
+        System.out.println("Nhấn Y để tiếp tục, nhấn N để thoát.");
+        String choice;
+        while (true) {
+            choice = sc.nextLine();
+            switch (choice) {
+                case "Y": {
+                    performCustomer();
+                    break;
+                }
+                case "N": {
+                    System.out.println("Thoát.");
+                    System.exit(0);
+                }
+                default:
+                    System.out.println("Bạn nhập sai ");
+                    continueConfirm();
+            }
+        }
+    }
+
+    public void performCustomer(){
+        String choose;
+        System.out.println("***********Menu***********");
+        showMenu();
+            int id;
+            choose = sc.nextLine();
+            switch (choose){
+                case "1":
+                    printStudent();
+                    continueConfirm();
+                    break;
+                case "2":
+                    try {
+                        addStudent();
+                        continueConfirm();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    break;
+                case "3":
+                    System.out.println("Nhập id cần sửa: ");
+                    id = sc.nextInt();
+                    try {
+                        editStudent(id);
+                        continueConfirm();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
+                    break;
+                case "4":
+                    try {
+                        deleteStudent();
+                        continueConfirm();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    break;
+                case "5":
+                    System.out.println("Nhập id học sinh cần nhập điểm: ");
+                    id = sc.nextInt();
+                    sc.nextLine();
+                    try {
+                        inputScoreStudent(id);
+                        continueConfirm();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    break;
+                case "6":
+                    System.out.println("Nhập id học sinh cần sửa điểm: ");
+                    id = sc.nextInt();
+                    sc.nextLine();
+                    try {
+                        editScoreStudent(id);
+                        continueConfirm();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    break;
+                case "7":
+                    try {
+                        printScoreStudent();
+                        continueConfirm();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    break;
+                case "0":
+                    System.out.println("Thoát.");
+                    System.exit(0);
+                default:
+                    System.out.println("Yêu cầu nhập lại: ");
+                    performCustomer();
+
+        }
+    }
 }
+

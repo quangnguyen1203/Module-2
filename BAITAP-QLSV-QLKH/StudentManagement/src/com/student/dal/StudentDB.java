@@ -2,6 +2,7 @@ package com.student.dal;
 
 import com.student.model.Student;
 
+import javax.print.DocFlavor;
 import java.io.*;
 import java.util.*;
 import java.util.Scanner;
@@ -73,14 +74,18 @@ public class StudentDB {
 
     public int inputId() {
         System.out.print("Nhập id của học sinh: ");
-        while (true) {
-            try {
-                int id = Integer.parseInt((sc.nextLine()));
-                return id;
-            } catch (NumberFormatException ex) {
-                System.out.print("Yêu cầu nhập lại: ");
+        while (!sc.hasNextInt()){
+            System.out.println("Không tìm thấy. Yêu cầu nhập hợp lệ");
+            sc.nextLine();
+        }
+        int id = sc.nextInt();
+        for(int i=0;i<studentList.size();i++){
+            if(studentList.get(i).getId()==id){
+                return -1;
             }
         }
+        sc.nextLine();
+        return id;
     }
 
     public String inputName() {
@@ -109,16 +114,22 @@ public class StudentDB {
     }
 
     public void edit(int id) throws IOException {
+        boolean check = false;
         for (int i = 0; i < studentList.size(); i++) {
             if (studentList.get(i).getId() == id) {
+                displayFormat();
+                studentList.get(i).displayAll();
+                System.out.println();
+                check = true;
                 studentList.get(i).setName(inputName());
                 studentList.get(i).setAge(inputAge());
                 studentList.get(i).setAddress(inputAddress());
-                saveFile();
-                break;
             }
         }
-        System.out.println("Không tìm thấy id.");
+        if (!check){
+            System.out.println("Không tìm thấy học sinh.");
+        }
+
     }
 
     public void print(){
@@ -134,8 +145,10 @@ public class StudentDB {
                 }
             }
         });
+        displayFormat();
         for (int i = 0; i < studentList.size(); i++) {
-            System.out.print(studentList.get(i).toStringCSV());
+            studentList.get(i).displayAll();
+            System.out.println();
         }
     }
 
@@ -152,35 +165,108 @@ public class StudentDB {
                 }
             }
         });
+        displayFormat();
         for (int i = 0; i < studentList.size(); i++) {
-            System.out.print(studentList.get(i).toStringGPA());
+            studentList.get(i).displayAll();
+            System.out.println();
         }
     }
 
-    public void inputScore(String name) throws IOException {
+    public void inputScore(int id) throws IOException {
+        boolean  check = false;
         for (int i = 0; i < studentList.size(); i++) {
-            if (studentList.get(i).getName().equals(name)) {
-                System.out.println("Nhập điểm lần 1: ");
-                float score1 = sc.nextInt();
-                studentList.get(i).setScore1(score1);
-                System.out.println("Nhập điểm lần 2: ");
-                float score2 = sc.nextInt();
-                studentList.get(i).setScore2(score2);
-                System.out.println("Nhập điểm lần 3: ");
-                float score3 = sc.nextInt();
-                studentList.get(i).setScore3(score3);
-                System.out.println("Nhập điểm lần 4: ");
-                float score4 = sc.nextInt();
-                studentList.get(i).setScore4(score4);
-                float GPA = (score1 + score2 + (score3 * 2) + (score4 * 3)) / 7;
-                studentList.get(i).setGPA(GPA);
-                System.out.println(studentList.get(i).toStringGPA());
-                return;
+            if (studentList.get(i).getId() == id) {
+                check = true;
+                if (studentList.get(i).getGPA()>0){
+                    studentList.get(i).displayAll();
+                    System.out.println();
+                    System.out.println("Học sinh đã được nhập điểm");
+                } else {
+                    float score1;
+                    do {
+                        System.out.println("Nhập điểm lần 1: ");
+                        score1 = sc.nextFloat();
+                    } while (!checkScore(score1));
+                    studentList.get(i).setScore1(score1);
+                    float score2;
+                    do {
+                        System.out.println("Nhập điểm lần 2: ");
+                        score2 = sc.nextFloat();
+                    } while (!checkScore(score2));
+                    studentList.get(i).setScore2(score2);
+                    float score3;
+                    do {
+                        System.out.println("Nhập điểm lần 3: ");
+                        score3 = sc.nextFloat();
+                    } while (!checkScore(score3));
+                    studentList.get(i).setScore3(score3);
+                    float score4;
+                    do {
+                        System.out.println("Nhập điểm lần 4: ");
+                        score4 = sc.nextFloat();
+                    } while (!checkScore(score4));
+                    studentList.get(i).setScore4(score4);
+                    float GPA = (score1 + score2 + (score3 * 2) + (score4 * 3)) / 7;
+                    studentList.get(i).setGPA(GPA);
+                    System.out.println(studentList.get(i).toStringGPA());
+                    break;
+                }
             }
         }
-        System.out.println("Không tìm thấy.");
+        if(!check){
+            System.out.println("Không tìm thấy học sinh.");
+        }
     }
 
+    public void editScore(int id) throws IOException {
+        boolean  check = false;
+        for (int i = 0; i < studentList.size(); i++) {
+            if (studentList.get(i).getId() == id) {
+                check = true;
+                    float score1;
+                    do {
+                        System.out.println("Nhập điểm lần 1: ");
+                        score1 = sc.nextFloat();
+                    } while (!checkScore(score1));
+                    studentList.get(i).setScore1(score1);
+                    float score2;
+                    do {
+                        System.out.println("Nhập điểm lần 2: ");
+                        score2 = sc.nextFloat();
+                    } while (!checkScore(score2));
+                    studentList.get(i).setScore2(score2);
+                    float score3;
+                    do {
+                        System.out.println("Nhập điểm lần 3: ");
+                        score3 = sc.nextFloat();
+                    } while (!checkScore(score3));
+                    studentList.get(i).setScore3(score3);
+                    float score4;
+                    do {
+                        System.out.println("Nhập điểm lần 4: ");
+                        score4 = sc.nextFloat();
+                    } while (!checkScore(score4));
+                    studentList.get(i).setScore4(score4);
+                    float GPA = (score1 + score2 + (score3 * 2) + (score4 * 3)) / 7;
+                    studentList.get(i).setGPA(GPA);
+                    System.out.println(studentList.get(i).toStringGPA());
+                    break;
+            }
+            if(!check){
+                System.out.println("Không tìm thấy học sinh.");
+            }
+        }
+    }
 
+    public boolean checkScore(float score){
+        return (score < 0 || score >10) ? false : true;
+    }
+
+    public void displayFormat(){
+        System.out.printf("| %4s | %20s | %12s | %10s | %12s | %12s | %12s | %12s | %12s |"
+                ,"ID","Tên","Tuổi","Địa chỉ","Điểm HS1(1)","Điểm HS1(2)","Điểm HS2","Điểm HS3","Điểm TB");
+        System.out.println();
+    }
 }
+
 

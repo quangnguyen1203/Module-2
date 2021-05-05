@@ -122,4 +122,11 @@ public class Student {
     public String toStringGPA(){
         return name + ":" + " Điểm hệ số 1: " + score1 + "," +  " Điểm hệ số 1: " + score2 + "," + " Điểm hệ số 2: " + score3 + "," +  " Điểm hệ số 3: " + score4 + "," +  " Điểm trung bình: " + GPA + "\n";
     }
+
+    public void displayAll() {
+        System.out.printf("| %4s | %20s | %12s | %10s | %12.02f | %12.02f | %12.02f | %12.02f | %12.02f |"
+                ,id,name,age,address,score1,score2,score3,score4,GPA);
+    }
+
+
 }

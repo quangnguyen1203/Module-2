@@ -1,7 +1,5 @@
 package com.customer.model;
 
-import javax.print.DocFlavor;
-
 public class Customer {
     private String name;
     private String address;

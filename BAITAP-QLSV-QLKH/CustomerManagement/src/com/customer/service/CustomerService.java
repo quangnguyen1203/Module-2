@@ -4,7 +4,6 @@ import com.customer.dal.CustomerDB;
 import com.customer.model.Customer;
 
 import java.io.IOException;
-import java.util.Map;
 
 public class CustomerService {
     public CustomerDB customerDB = new CustomerDB();

@@ -14,7 +14,7 @@ public class Main {
         try {
             customerService.loadData();
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
         menuService.performCustomer();
     }

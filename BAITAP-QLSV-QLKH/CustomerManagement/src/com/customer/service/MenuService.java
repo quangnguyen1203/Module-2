@@ -17,6 +17,7 @@ public class MenuService {
         System.out.println("Bấm 4: Để in toàn bộ danh sách khách hàng");
         System.out.println("Bấm 5: Để tăng số đơn cho khách hàng");
         System.out.println("Bấm 0: Để thoát");
+        System.out.println("Nhập số cần chọn: ");
     }
 
     public void addCustomer() throws IOException {
@@ -55,7 +56,7 @@ public class MenuService {
         continueConfirm();
     }
 
-    public void oderInvreaseCustomer(){
+    public void oderIncreaseCustomer(){
         System.out.println("Nhập số điện thoại: ");
         String phoneNumber = sc.nextLine();
         System.out.println("Nhập số đơn hàng muốn thêm: ");
@@ -121,7 +122,7 @@ public class MenuService {
                     printCustomer();
                     break;
                 case 5:
-                    oderInvreaseCustomer();
+                    oderIncreaseCustomer();
                     break;
                 case 0:
                     System.out.println("Thoát.");
