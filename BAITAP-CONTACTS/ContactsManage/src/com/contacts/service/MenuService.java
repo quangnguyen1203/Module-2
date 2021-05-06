@@ -24,7 +24,7 @@ public class MenuService {
         String choice;
         while (true) {
             choice = sc.nextLine();
-            switch (choice) {
+            switch (choice){
                 case "Y": {
                     performContact();
                     break;
@@ -83,6 +83,8 @@ public class MenuService {
                     System.out.println("Nhập số điện thoại: ");
                     phoneNumber = sc.nextLine();
                     contactService.searchContact(phoneNumber);
+                    continueConfirm();
+                    break;
                 case "6":
                     System.out.println("Thoát.");
                     System.exit(0);

@@ -1,5 +1,7 @@
 package com.contacts.model;
 
+import javax.swing.plaf.PanelUI;
+
 public class Contact {
     private String phoneNumber;
     private String groupContact;
@@ -8,6 +10,7 @@ public class Contact {
     private String address;
     private String dob;
     private String email;
+
 
     public Contact(String phoneNumber, String groupContact, String name, String gender, String address, String dob, String email) {
         this.phoneNumber = phoneNumber;
@@ -75,19 +78,19 @@ public class Contact {
         this.email = email;
     }
 
-    @Override
-    public String toString() {
-        return "Contact {" +
-                "phoneNumber='" + phoneNumber + '\'' +
-                ", groupContact='" + groupContact + '\'' +
-                ", name='" + name + '\'' +
-                ", gender='" + gender + '\'' +
-                ", address='" + address + '\'' +
-                ", dob='" + dob + '\'' +
-                '}';
-    }
+
 
     public String toStringCSV(){
         return phoneNumber + "," + groupContact + "," + name + "," + gender + "," + address + "," + dob + "," + email + "\n";
+    }
+
+    public void displayContactEmail(){
+        System.out.printf("|| %15s | %20s | %30s | %11s | %20s | %15s | %30s ||",phoneNumber,groupContact,name,gender,address,dob,email);
+        System.out.println();
+    }
+
+    public void displayContactNonEmail(){
+        System.out.printf("|| %15s | %20s | %30s | %11s | %20s | %15s ||",phoneNumber,groupContact,name,gender,address,dob);
+        System.out.println();
     }
 }

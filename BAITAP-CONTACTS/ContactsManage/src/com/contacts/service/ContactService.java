@@ -16,18 +16,25 @@ public class ContactService {
         contactDB.readFile();
     }
 
-    public String inputPhoneNumber(){
-        String phoneNumber;
-        do{
-            System.out.println("Nhập số điện thoại: ");
-            phoneNumber = sc.nextLine();
-        } while (!checkPhoneNumber(phoneNumber));
-        for(int i=0;i<contactDB.contactList.size();i++){
-            if(contactDB.contactList.get(i).getPhoneNumber().equals(phoneNumber)){
-                System.out.println("Đã tồn tại số điện thoại.");
-                inputPhoneNumber();
+    public Contact findExists(String string){
+        for (int i = 0; i < contactDB.contactList.size(); i++) {
+            if(contactDB.contactList.get(i).getPhoneNumber().equals(string) || contactDB.contactList.get(i).getEmail().equals(string)){
+                return contactDB.contactList.get(i);
             }
         }
+        return null;
+    }
+
+    public String inputPhoneNumber(){
+        String phoneNumber;
+        do {
+            System.out.println("Nhập số điện thoại: ");
+            phoneNumber = sc.nextLine();
+            while (findExists(phoneNumber) != null) {
+                System.out.println("Đã tồn tại số điện thoại. Vui lòng nhập lại");
+                phoneNumber = sc.nextLine();
+            }
+        }while (!checkPhoneNumber(phoneNumber));
         return phoneNumber;
     }
 
@@ -35,32 +42,54 @@ public class ContactService {
         String regex = "^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(phoneNumber);
-        return matcher.find() ? true : false;
+        return matcher.find();
     }
 
     public String inputGroupContact(){
         System.out.println("Nhập nhóm danh bạ: ");
-        return sc.nextLine();
+        return toUpperCase(sc.nextLine());
     }
 
     public String inputName(){
-        System.out.println("Nhập họ tên: ");
-        return sc.nextLine();
+        String name;
+        do {
+            System.out.println("Nhập họ tên: ");
+            name = toUpperCase(sc.nextLine());
+        }while (!checkName(name));
+        return name;
+    }
+
+    public boolean checkName(String name){
+        String regex = "^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂẾưăạảấầẩẫậắằẳẵặẹẻẽềềểếỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\\s\\W|_]+";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(name);
+        return matcher.find();
     }
 
     public String inputGender(){
         System.out.println("Nhập giới tính:");
-        return sc.nextLine();
+        return toUpperCase(sc.nextLine());
     }
 
     public String inputAddress(){
         System.out.println("Nhập địa chỉ: ");
-        return sc.nextLine();
+        return toUpperCase(sc.nextLine());
     }
 
     public String inputDOB(){
-        System.out.println("Nhập ngày sinh: ");
-        return sc.nextLine();
+        String dob;
+        do {
+            System.out.println("Nhập ngày sinh: ");
+            dob = toUpperCase(sc.nextLine());
+        }while (!checkDOB(dob));
+        return dob;
+    }
+
+    public boolean checkDOB(String dob){
+        String regex = "^(3[01]|[12][0-9]|0[1-9])/(1[0-2]|0[1-9])/[0-9]{4}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(dob);
+        return matcher.find();
     }
 
     public String inputEmail(){
@@ -68,6 +97,10 @@ public class ContactService {
         do {
             System.out.println("Nhập email: ");
             email = sc.nextLine();
+            while (findExists(email) != null) {
+                System.out.println("Đã tồn tại email. Vui lòng nhập lại");
+                email = sc.nextLine();
+            }
         }while (!checkEmail(email));
         return email;
     }
@@ -76,7 +109,7 @@ public class ContactService {
         String regex = "^[a-zA-Z]+[a-zA-Z0-9]*@{1}\\w+mail.com$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(email);
-        return matcher.find() ? true : false;
+        return matcher.find();
     }
 
     public void addContact() throws IOException {
@@ -90,12 +123,15 @@ public class ContactService {
         Contact contact = new Contact(phoneNumber,groupContact,name,gender,address,dob,email);
         contactDB.add(contact);
         contactDB.saveFile();
+        System.out.println("Bạn đã thêm mới thành công!!!");
     }
 
     public void updateContact(String phoneNumber) throws IOException {
         boolean check = false;
         for (int i = 0; i < contactDB.contactList.size() ; i++) {
             if (contactDB.contactList.get(i).getPhoneNumber().equals(phoneNumber)){
+                displayFormat();
+                contactDB.contactList.get(i).displayContactEmail();
                 check = true;
                 contactDB.contactList.get(i).setGroupContact(inputGroupContact());
                 contactDB.contactList.get(i).setName(inputName());
@@ -124,26 +160,79 @@ public class ContactService {
         if (contact != null) {
             contactDB.contactList.remove(contact);
             contactDB.saveFile();
+            System.out.println("Bạn đã xóa thành công!!!");
         } else {
-            System.out.printf("id không tồn tại");
+            System.out.println("Không tìm thấy số điện thoại cần xóa trong danh bạ.");
         }
     }
 
     public void searchContact(String phoneNumber){
+        boolean check = false;
         for (int i = 0; i < contactDB.contactList.size() ; i++) {
             if(contactDB.contactList.get(i).getPhoneNumber().equals(phoneNumber)){
-                System.out.println(contactDB.contactList.get(i).toString());
+                check = true;
+                displayFormat();
+                contactDB.contactList.get(i).displayContactEmail();
             }
+        }
+        if(!check){
+            System.out.println("Không tìm thấy số điện thoại cần tìm trong danh bạ.");
         }
     }
 
-    public void printContact(){
-        if(contactDB.contactList.size()<=0){
-            System.out.println("Danh sách hiện tại còn trống.");
-        } else {
-            for (int i = 0; i < contactDB.contactList.size() ; i++) {
-                System.out.println(contactDB.contactList.get(i).toString());
+    public String toUpperCase(String string){
+        char[] charArray = string.toCharArray();
+        boolean foundSpace = true;
+        for(int i = 0; i < charArray.length; i++) {
+            charArray[i] = Character.toLowerCase(charArray[i]);
+            if(Character.isLetter(charArray[i])) {
+                if(foundSpace) {
+                    charArray[i] = Character.toUpperCase(charArray[i]);
+                    foundSpace = false;
+                }
+            }
+            else {
+                foundSpace = true;
             }
         }
+        String outputString = String.valueOf(charArray);
+        return outputString;
+    }
+
+    public void printContact(){
+        if(contactDB.contactList.size()==0){
+            System.out.println("Danh sách hiện tại còn trống.");
+        } else {
+            displayFormatNonEmail();
+                for (int i = 0; i < contactDB.contactList.size() ; i++) {
+                    if(i==0 || i%5 != 0){
+                        contactDB.contactList.get(i).displayContactNonEmail();
+                    } else {
+                        System.out.print("Nhấn enter để tiếp tục hiển thị danh sách");
+                        switch (sc.nextLine()){
+                            case "":
+                                displayFormatNonEmail();
+                                contactDB.contactList.get(i).displayContactNonEmail();
+                                break;
+                            default:
+                                System.out.println("Exit.");
+                                return;
+                        }
+                    }
+                }
+            System.out.println("Đã hiển thị toàn bộ danh bạ!!!");
+        }
+    }
+
+    public void displayFormat(){
+        System.out.printf("|| %15s | %20s | %30s | %11s | %20s | %15s | %30s ||","Số điện thoại","Nhóm danh bạ","Họ tên","Giới tính","Địa chỉ","Ngày sinh","Email");
+        System.out.println();
+    }
+
+    public void displayFormatNonEmail(){
+        System.out.printf("|| %15s | %20s | %30s | %11s | %20s | %15s ||","Số điện thoại","Nhóm danh bạ","Họ tên","Giới tính","Địa chỉ","Ngày sinh");
+        System.out.println();
     }
 }
+
+
