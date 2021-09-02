@@ -1,6 +1,5 @@
 package com.contacts.model;
 
-import javax.swing.plaf.PanelUI;
 
 public class Contact {
     private String phoneNumber;

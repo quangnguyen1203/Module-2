@@ -1,0 +1,54 @@
+/* ------------------------------- */
+.carousel_wrapper { padding:10px 0 0px 0; margin-top:20px; }
+.carousel_bg { background:#fff; width:780px; float:left; margin:0 auto; }
+.scroller_place { padding:0px 30px 11px 30px; }
+
+#viewport {	
+width:680px;
+float:left;
+/*
+overflow:hidden; 
+z-index:100; 
+position:absolute;*/
+ }
+#viewport ul {	position: relative;	padding: 0; z-index:1; }
+#viewport li {	float:left; width:160px; height:300px; margin:0 5px 0 5px; }
+#viewport li .pr_img { width:150px; height:150px; background:#FFFFFF; position:relative; }
+#viewport li .pr_img img{
+}
+#viewport li h3 {  
+font-size:12px; 
+font-weight:normal; 
+padding:2px 0 2px 0px; 
+line-height:16px; 
+width:150px;
+height:33px;
+text-align:center;
+margin:0px; 
+}
+#viewport li h3 a {
+	color:#6f2d04;
+	text-decoration:none;
+	text-align:center;
+	font-weight:bold;
+	
+}
+#viewport li h3 a:hover { color:#000000; }
+
+
+.scroller_place .prev { background:url(../images/prev.gif) no-repeat; position:absolute; margin:-10px 0 0 -30px; width:25px; height:552px; display:block; }
+.scroller_place .next { background:url(../images/next.gif) no-repeat; position:absolute; margin:-10px 0 0 685px; width:25px; height:552px; display:block; }
+
+
+#checkout-step-login h3, #checkout-step-login h4, #checkout-step-login p { padding-bottom:13px; }
+
+#checkout-step-billing .form-list,#checkout-step-shipping .form-list { margin:0 -200px 0 0; }
+#checkout-step-billing .form-list .field,#checkout-step-shipping .form-list .field { width:333px; }
+#checkout-step-billing .form-list label,#checkout-step-shipping .form-list label {  }
+#checkout-step-billing .form-list input.input-text,#checkout-step-shipping .form-list input.input-text { width:296px; }
+#checkout-step-billing .form-list select,#checkout-step-shipping .form-list select { width:302px; }
+#checkout-step-billing .form-list li.wide input.input-text,#checkout-step-shipping .form-list li.wide input.input-text { width:629px; }
+#checkout-step-billing .control { float:left; padding:0 45px 0 0; }
+
+
+

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="331c9c65-f7fd-4faf-957c-f5048ece4095" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../BAITAP-QLSV-QLKH/StudentManagement/src/com/student/service/MenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContactsManage/src/com/contacts/dal/ContactDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/ContactsManage/src/com/contacts/dal/ContactDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContactsManage/src/com/contacts/model/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/ContactsManage/src/com/contacts/model/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BAITAP-QLSV-QLKH/StudentManagement/out/production/StudentManagement/com/student/dal/StudentDB$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BAITAP-QLSV-QLKH/StudentManagement/out/production/StudentManagement/com/student/dal/StudentDB$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BAITAP-QLSV-QLKH/StudentManagement/out/production/StudentManagement/com/student/dal/StudentDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BAITAP-QLSV-QLKH/StudentManagement/out/production/StudentManagement/com/student/dal/StudentDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BAITAP-QLSV-QLKH/StudentManagement/out/production/StudentManagement/com/student/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BAITAP-QLSV-QLKH/StudentManagement/out/production/StudentManagement/com/student/model/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BAITAP-QLSV-QLKH/StudentManagement/out/production/StudentManagement/com/student/presentation/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BAITAP-QLSV-QLKH/StudentManagement/out/production/StudentManagement/com/student/presentation/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BAITAP-QLSV-QLKH/StudentManagement/out/production/StudentManagement/com/student/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BAITAP-QLSV-QLKH/StudentManagement/out/production/StudentManagement/com/student/service/StudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BAITAP-QLSV-QLKH/StudentManagement/src/com/student/dal/StudentDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BAITAP-QLSV-QLKH/StudentManagement/src/com/student/dal/StudentDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BAITAP-QLSV-QLKH/StudentManagement/src/com/student/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BAITAP-QLSV-QLKH/StudentManagement/src/com/student/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BAITAP-QLSV-QLKH/StudentManagement/src/com/student/presentation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BAITAP-QLSV-QLKH/StudentManagement/src/com/student/presentation/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BAITAP-QLSV-QLKH/StudentManagement/src/com/student/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BAITAP-QLSV-QLKH/StudentManagement/src/com/student/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BAITAP-QLSV-QLKH/StudentManagement/student.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../BAITAP-QLSV-QLKH/StudentManagement/student.csv" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1uQq6IH1iqJcvEsUuANBdoggokF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.contacts.presentation.Main" />
+      <module name="BAITAP-CONTACTS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.contacts.presentation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="331c9c65-f7fd-4faf-957c-f5048ece4095" name="Default Changelist" comment="" />
+      <created>1624607984482</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624607984482</updated>
+      <workItem from="1624607985930" duration="59000" />
+      <workItem from="1624608104129" duration="831000" />
+      <workItem from="1625623508450" duration="98000" />
+      <workItem from="1625642545098" duration="410000" />
+      <workItem from="1625651107281" duration="1052000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

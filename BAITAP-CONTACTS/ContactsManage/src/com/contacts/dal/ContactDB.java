@@ -6,8 +6,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+
 
 public class ContactDB {
     public static Scanner sc = new Scanner(System.in);
@@ -38,10 +37,11 @@ public class ContactDB {
         try {
             br = new BufferedReader(new FileReader("contact.csv"));
             String line;
-            while ((line=br.readLine())!= null){
+            while ((line = br.readLine())!= null){
                 String[] str = line.split(",");
                 Contact contact = new Contact(str[0],str[1],str[2],str[3],str[4],str[5],str[6]);
-                contactList.add(contact);
+//                contactList.add(contact);
+                add(contact);
             }
         } catch (IOException e) {
             e.printStackTrace();

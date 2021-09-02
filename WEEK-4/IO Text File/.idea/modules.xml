@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DemoTextFile/DemoTextFile.iml" filepath="$PROJECT_DIR$/DemoTextFile/DemoTextFile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DemoTextFileStudents/DemoTextFileStudents.iml" filepath="$PROJECT_DIR$/DemoTextFileStudents/DemoTextFileStudents.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IO Text File.iml" filepath="$PROJECT_DIR$/IO Text File.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Write_Read_CSV/Write_Read_CSV.iml" filepath="$PROJECT_DIR$/Write_Read_CSV/Write_Read_CSV.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,7 +1,8 @@
 package com.student.model;
 
 public class Student {
-    private int id;
+    private int rollNo;
+    private int stCode;
     private String name;
     private int age;
     private String address;
@@ -14,14 +15,14 @@ public class Student {
     public Student() {
     }
 
-    public Student(int id, String name, int age, String address) {
-        this.id = id;
+    public Student(int stCode, String name, int age, String address) {
+        this.stCode = stCode;
         this.name = name;
         this.age = age;
         this.address = address;
     }
-    public Student(int id, String name, int age, String address,float score1, float score2, float score3, float score4,float GPA) {
-        this.id = id;
+    public Student(int stCode, String name, int age, String address, float score1, float score2, float score3, float score4, float GPA) {
+        this.stCode = stCode;
         this.name = name;
         this.age = age;
         this.address = address;
@@ -32,12 +33,33 @@ public class Student {
         this.GPA = GPA;
     }
 
-    public int getId() {
-        return id;
+    public Student(int rollNo, int stCode, String name, int age, String address, float score1, float score2, float score3, float score4, float GPA) {
+        this.rollNo = rollNo;
+        this.stCode = stCode;
+        this.name = name;
+        this.age = age;
+        this.address = address;
+        this.score1 = score1;
+        this.score2 = score2;
+        this.score3 = score3;
+        this.score4 = score4;
+        this.GPA = GPA;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public int getRollNo() {
+        return rollNo;
+    }
+
+    public void setRollNo(int rollNo) {
+        this.rollNo = rollNo;
+    }
+
+    public int getStCode() {
+        return stCode;
+    }
+
+    public void setStCode(int stCode) {
+        this.stCode = stCode;
     }
 
     public String getName() {
@@ -105,18 +127,8 @@ public class Student {
         this.GPA = GPA;
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", address='" + address + '\'' +
-                '}';
-    }
-
     public String toStringCSV(){
-        return id + "," + name + "," + age  + "," + address + "," + score1 + "," + score2 + "," + score3 + "," + score4 + "," + GPA + "\n";
+        return rollNo+ "," +stCode + "," + name + "," + age  + "," + address + "," + score1 + "," + score2 + "," + score3 + "," + score4 + "," + GPA + "\n";
     }
 
     public String toStringGPA(){
@@ -124,8 +136,8 @@ public class Student {
     }
 
     public void displayAll() {
-        System.out.printf("| %4s | %20s | %12s | %10s | %12.02f | %12.02f | %12.02f | %12.02f | %12.02f |"
-                ,id,name,age,address,score1,score2,score3,score4,GPA);
+        System.out.printf("| %6s | %20s | %12s | %10s | %12.02f | %12.02f | %12.02f | %12.02f | %12.02f |"
+                , stCode,name,age,address,score1,score2,score3,score4,GPA);
     }
 
 
